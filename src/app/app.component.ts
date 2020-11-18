@@ -10,7 +10,7 @@ export class AppComponent {
 
   numbers: Array<number> = [];
 
-  onSecondEmitted(event: number) {
+  onNumberEmitted(event: number) {
     console.log('received: ' + event);
     this.numbers.push(event);
   }

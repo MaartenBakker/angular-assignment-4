@@ -1,7 +1,7 @@
 <div class="container">
-  <app-game-control (secondEmitter)="onSecondEmitted($event)"></app-game-control>
-  <div *ngFor="let number of numbers">
+  <app-game-control (numberEmitter)="onNumberEmitted($event)"></app-game-control>
+  <ng-container *ngFor="let number of numbers">
     <app-even *ngIf="number % 2 === 0" [number]="number"></app-even>
     <app-odd *ngIf="number % 2 !== 0" [number]="number"></app-odd>
-  </div>
+  </ng-container>
 </div>
